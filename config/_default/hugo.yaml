@@ -61,5 +61,12 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    allow:
+      - '^go$'
+      - '^npx$'
+      - '^node$'
+      - '^postcss$'
+      - '^tailwindcss$'
 sitemap:
   _merge: deep
