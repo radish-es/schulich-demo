@@ -68,5 +68,6 @@ security:
       - '^node$'
       - '^postcss$'
       - '^tailwindcss$'
+      - '^git$'
 sitemap:
   _merge: deep
