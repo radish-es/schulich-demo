@@ -1,4 +1,5 @@
-title: Carmen Sinclair
+---
+title: Jamie Baxter
 role: Research Fellow
 bio: |
   Carmen Sinclair explores barriers to access to justice and reforms to the profession.
@@ -14,3 +15,4 @@ social:
     link: https://linkedin.com/in/carmensinclair
 interests:
   - Access to Justice, Courts & the Legal Profession
+---
