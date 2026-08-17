@@ -1,0 +1,34 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Researchers"
+url = "/authors"
+weight = 1
+
+[[main]]
+name = "Current Research Focus"
+url = "/focus"
+weight = 2
+
+[[main]]
+name = "Research Themes"
+url = "/themes"
+weight = 3
+
+[[main]]
+name = "Legal Practice Areas"
+url = "/areas"
+weight = 4
+
+
+# footer menu
+[[footer]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 3
