@@ -14,7 +14,7 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h4>
     <div class="text-left">
-      <p class="mb-4">
+      <p class="mb-4 text-lg font-bold italic">
         {{ .Params.description }}
       </p>
       <!--<h5 class="mb-3">
@@ -22,29 +22,29 @@
       </h5>-->
       <span class="mb-4">
         <!--{{ .Summary | plainify }}-->
-        {{ if isset .Params "themes" }}<p><b>Research themes:</b></p>{{ end }}
+        {{ if isset .Params "themes" }}<p class="mb-3"><b>Research themes:</b></p>{{ end }}
         <!--ADDED THIS to use the title of each theme defined in a separate index file -->
         {{ with .GetTerms "themes" }}
-            <ul class="list-disc list-outside space-y-2 px-8">
+            
             {{ range . }}
-              <li><span class="bg-gray-400 dark:bg-darkmode-body rounded px-2"><a href="{{ .Permalink }}">{{ .Title }}</a></span></li>
+              <span class="inline-flex items-center rounded-full px-2.5 py-0.5 bg-yellow-400 text-black mb-2 dark:bg-darkmode-body"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
             {{ end }}
-            </ul>
+            
         {{ end }}
         <!--
         {{ range .Params.themes }}
           <a href="{{ (printf `/themes/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a> <br/>
         {{ end }}-->
         <br/>
-        {{ if isset .Params "areas" }}<p><b>Legal practice areas:</b></p>{{ end }}
-        <ul class="list-disc list-outside space-y-2 px-8">
+        {{ if isset .Params "areas" }}<p class="mt-5 mb-3"><b>Legal practice areas:</b></p>{{ end }}
+        
           {{ range .Params.areas }}
-            <li><span class="bg-gray-400 dark:bg-darkmode-body rounded px-2"><a href="{{ (printf `/areas/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a></span></li>
+            <span class="inline-flex items-center rounded-full px-2.5 py-0.5 bg-black text-white mb-2 dark:bg-darkmode-body"><a href="{{ (printf `/areas/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a></span>
           {{ end }}
-        </ul>
+        
         </span>
       </span>
-      <br/>
+      <!--<br/>
       <ul class="social-icons">
         {{ range .Params.social }}
           <li>
@@ -54,6 +54,6 @@
             </a>
           </li>
         {{ end }}
-      </ul>
+      </ul>-->
   </div>
 </div>

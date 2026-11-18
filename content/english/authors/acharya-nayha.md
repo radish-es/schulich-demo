@@ -3,7 +3,7 @@ title: Nayha Acharya
 email: nayha.acharya@dal.ca
 image: "/images/nayha.png"
 position: Associate Professor
-description: this is meta description
+description: Nayha's work is advancing the boundaries and understandings of alternative dispute resolution in Canada.
 social:
 
   - name: twitter

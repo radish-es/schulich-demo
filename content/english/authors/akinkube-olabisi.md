@@ -3,7 +3,7 @@ title: Olabisi Akinkube
 email: Olabisi.Akinkugbe@dal.ca
 image: "/images/bisi.png"
 position: Associate Professor
-description: this is meta description
+description: Olabisi is at the forefront of developing institutions of international economic law.
 social:
 
   - name: twitter
