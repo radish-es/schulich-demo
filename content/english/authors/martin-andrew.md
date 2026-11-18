@@ -3,7 +3,7 @@ title: Andrew Martin
 email: andrew.martin@dal.ca
 image: "/images/andrew.png"
 position: Associate Professor
-description: this is meta description
+description: Andrew is the country's leading expert on the ethics of government lawyers.
 social:
 
   - name: twitter

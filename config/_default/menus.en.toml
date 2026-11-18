@@ -4,22 +4,22 @@
 [[main]]
 name = "Researchers"
 url = "/authors"
-weight = 1
+weight = 4
 
 [[main]]
-name = "Current Research Focus"
+name = "Our Research Commitment"
 url = "/focus"
-weight = 2
+weight = 1
 
 [[main]]
 name = "Research Themes"
 url = "/themes"
-weight = 3
+weight = 2
 
 [[main]]
 name = "Legal Practice Areas"
 url = "/areas"
-weight = 4
+weight = 3
 
 
 # footer menu

@@ -10,40 +10,50 @@
       width="120"
       src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
   {{ end }}
-  <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h4>
-  <h5 class="mb-3">
-    {{ .Params.position }}
-  </h5>
-  <p class="mb-4">
-    <!--{{ .Summary | plainify }}-->
-    {{ if isset .Params "themes" }}<h6>Research themes:</h6>{{ end }}
-    <!--ADDED THIS to use the title of each theme defined in a separate index file -->
-    {{ with .GetTerms "themes" }}
-      {{ range . }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
-    {{ end }}
-    <!--
-    {{ range .Params.themes }}
-      <a href="{{ (printf `/themes/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a> <br/>
-    {{ end }}-->
-    <br/>
-    {{ if isset .Params "areas" }}<h6>Legal practice areas:</h6>{{ end }}
-    {{ range .Params.areas }}
-      <a href="{{ (printf `/areas/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a> <br/>
-    {{ end }}
-  </p>
-  <br/>
-  <ul class="social-icons">
-    {{ range .Params.social }}
-      <li>
-        <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
-          <span class="sr-only">{{ .title }}</span>
-          <i class="{{ .icon }}"></i>
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+    <h4 class="mb-3">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h4>
+    <div class="text-left">
+      <p class="mb-4">
+        {{ .Params.description }}
+      </p>
+      <!--<h5 class="mb-3">
+        {{ .Params.position }}
+      </h5>-->
+      <span class="mb-4">
+        <!--{{ .Summary | plainify }}-->
+        {{ if isset .Params "themes" }}<p><b>Research themes:</b></p>{{ end }}
+        <!--ADDED THIS to use the title of each theme defined in a separate index file -->
+        {{ with .GetTerms "themes" }}
+            <ul class="list-disc list-outside space-y-2 px-8">
+            {{ range . }}
+              <li><span class="bg-gray-400 dark:bg-darkmode-body rounded px-2"><a href="{{ .Permalink }}">{{ .Title }}</a></span></li>
+            {{ end }}
+            </ul>
+        {{ end }}
+        <!--
+        {{ range .Params.themes }}
+          <a href="{{ (printf `/themes/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a> <br/>
+        {{ end }}-->
+        <br/>
+        {{ if isset .Params "areas" }}<p><b>Legal practice areas:</b></p>{{ end }}
+        <ul class="list-disc list-outside space-y-2 px-8">
+          {{ range .Params.areas }}
+            <li><span class="bg-gray-400 dark:bg-darkmode-body rounded px-2"><a href="{{ (printf `/areas/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a></span></li>
+          {{ end }}
+        </ul>
+        </span>
+      </span>
+      <br/>
+      <ul class="social-icons">
+        {{ range .Params.social }}
+          <li>
+            <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
+              <span class="sr-only">{{ .title }}</span>
+              <i class="{{ .icon }}"></i>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+  </div>
 </div>

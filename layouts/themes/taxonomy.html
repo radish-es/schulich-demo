@@ -4,10 +4,10 @@
 
   <section class="section">
     <div class="container">
-      <ul class="text-center">
+      <ul class="text-left">
         {{/* List terms for the current taxonomy (e.g. categories or tags) */}}
         {{ range .Data.Terms.ByCount }}
-          <li class="m-3 inline-block">
+          <li class="m-3 block">
             <a
               href="{{ .Page.Permalink }}"
               class="bg-light text-text-dark dark:bg-darkmode-light dark:text-darkmode-text-dark block rounded px-4 py-2 text-xl">
