@@ -14,7 +14,7 @@ social:
     icon: fa-brands fa-linkedin
     link: https://linkedin.com
 themes:
-  - "Business, Organizations and Economic Development"
+  - "business"
 areas:
   - "International Economic Law"
   - "International Human Rights"  

@@ -14,7 +14,7 @@ social:
     icon: fa-brands fa-linkedin
     link: https://linkedin.com
 themes:
-  - "Access to Justice, Courts and the Legal Profession"
+  - "atoj"
 areas:
   - "Legal Ethics"
   - "Government Lawyers"

@@ -19,9 +19,16 @@
   <p class="mb-4">
     <!--{{ .Summary | plainify }}-->
     {{ if isset .Params "themes" }}<h6>Research themes:</h6>{{ end }}
+    <!--ADDED THIS to use the title of each theme defined in a separate index file -->
+    {{ with .GetTerms "themes" }}
+      {{ range . }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    {{ end }}
+    <!--
     {{ range .Params.themes }}
       <a href="{{ (printf `/themes/%s/` (. | urlize)) | relURL }}">{{ . | humanize | title }}</a> <br/>
-    {{ end }}
+    {{ end }}-->
     <br/>
     {{ if isset .Params "areas" }}<h6>Legal practice areas:</h6>{{ end }}
     {{ range .Params.areas }}

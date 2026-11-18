@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
+    <div class="container">
+      <ul class="text-center">
+        {{/* List terms for the current taxonomy (e.g. categories or tags) */}}
+        {{ range .Data.Terms.ByCount }}
+          <li class="m-3 inline-block">
+            <a
+              href="{{ .Page.Permalink }}"
+              class="bg-light text-text-dark dark:bg-darkmode-light dark:text-darkmode-text-dark block rounded px-4 py-2 text-xl">
+              
+              <div style="display: flex; align-items: center; gap: 20px;">
+                {{ with .Page.Params.Image }}<img src="{{ . | relURL }}">{{ end }}
+                <div>
+                  <h3>{{ .Page.Title }}
+                    <!--<span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                    {{ .Count }}
+                    </span>-->
+                  </h3>
+                  <p>{{ with .Page.Description }}{{ . }}{{ end }}</p>
+                </div>
+              </div>
+              
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}
