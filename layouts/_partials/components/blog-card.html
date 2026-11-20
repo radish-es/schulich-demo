@@ -1,0 +1,20 @@
+<div class="bg-body dark:bg-darkmode-body">
+  {{ $image:= .Params.image }}
+  {{ if $image }}
+    <img 
+              src="{{.Params.image }}" 
+              alt="{{ .Title }}" 
+              class="w-50 h-50 rounded-full object-cover shrink-0 border-2 border-gray-200"
+            />
+  {{ end }}
+  <h4 class="mb-3">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h4>
+  
+  <p class="mb-6">{{ .Params.description | plainify }}</p>
+  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+    {{ T "read_more" | default "Read More" }}
+  </a>
+</div>

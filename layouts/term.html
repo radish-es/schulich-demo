@@ -1,0 +1,26 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
+    <div class="container">
+      {{ if strings.TrimSpace .RawContent }}
+        <div class="mb-20 border-0 p-5 text-2xl font-bold italic">
+          <p>{{ .Content }}</p>
+        </div>
+      {{ end }}
+      <div class="row gx-5">
+        <!-- posts for this term -->
+        <div class="lg:col-8">
+          <div class="row">
+            {{ range .Data.Pages }}
+              <div class="md:col-6 mb-14">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

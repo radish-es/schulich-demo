@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        {{ range .RegularPages }}
+          <!-- ADDED "flex" here to make author card fill the height -->
+          <div class="md:col-6 lg:col-4 mb-14 flex">
+            {{ partial "components/author-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
