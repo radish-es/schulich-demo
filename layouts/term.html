@@ -12,11 +12,24 @@
       <div class="row gx-5">
         <!-- posts for this term -->
         <div class="lg:col-8">
-          <div class="row">
+          <div class="row border-b-2 border-slate-300 pb-2 mb-20">
+            <h3 class="mb-10">Who is working on this:</h3>
             {{ range .Data.Pages }}
-              <div class="md:col-6 mb-14">
-                {{ partial "components/blog-card" . }}
-              </div>
+              {{ if eq .Section "authors" }}
+                <div class="md:col-6 mb-14">
+                  {{ partial "components/blog-card" . }}
+                </div>
+              {{ end }}
+            {{ end }}  
+          </div>
+          <div class="row">
+            <h3 class="mb-10">Our stories:</h3>
+            {{ range .Data.Pages }}
+              {{ if eq .Section "blog" }}
+                <div class="md:col-6 mb-14">
+                  {{ partial "components/blog-card" . }}
+                </div>
+              {{ end }}
             {{ end }}
           </div>
         </div>
