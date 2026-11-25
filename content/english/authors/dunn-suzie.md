@@ -17,11 +17,11 @@ themes:
   - "equality"
   - "tech"
 areas:
-  - "Criminal Law"  
-  - "Copyright Law"
-  - "Media Law"
+  - "Privacy Law"  
+  - "Artificial Intelligence"
+  - "Tort Law"
 ---
 
-Professor Dugas earned her JD at the Schulich School of Law in 2015 and articled at Nova Scotia Legal Aid, then completed her LLM here in 2018. She is a recipient of the James Robinson Johnston Graduate Studies Scholarship and was the first African Nova Scotian to clerk at the Nova Scotia Court of Appeal. She joined the faculty of the Schulich School of Law in 2019.
+Professor Dunn is the interim director of the Law & Technology Institute and an assistant professor at Dalhousie University’s Schulich School of Law. She teaches contracts, torts, privacy, law and technology, and legal ethics. She coached the winning 2021-2022 Harold G Fox Intellectual Property moot team. Her research centers on the intersections of equality, technology and the law, with a specific focus on technology-facilitated gender-based violence, artificial intelligence, deepfakes, and social media. She is a research partner on a four-year SSHRC funded research project on young people’s experiences with sexual violence online, DIY Digital Safety. She is also a Senior Fellow with the Centre for International Governance Innovation where she led phase one of CIGI’s Supporting Safer Digital Spaces project, and a member of the Women’s Legal Education and Action Fund technology-facilitated violence committee.
 
-Current research interests include copyright law, criminal law with a social justice perspective, and critical race legal theory.
+
