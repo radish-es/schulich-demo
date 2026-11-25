@@ -3,7 +3,7 @@ title: Elaine Craig
 email: elaine.craig@dal.ca
 image: "/images/elaine-craig.jpg"
 position: Professor
-description: Professor of Law, Dorothy Killam Foundation Research Fellow, Distinguished University Research Professor
+description: Elaine has transformed how Canadian legal systems address sexualized violence.
 social:
 
   - name: twitter
