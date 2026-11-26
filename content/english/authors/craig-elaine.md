@@ -15,6 +15,7 @@ social:
     link: https://linkedin.com
 themes:
   - "gov"
+  - "equality"
 areas:
   - "Sexual Assault"
   - "Criminal Law"  

@@ -1,12 +1,12 @@
 ---
 # Banner
 banner:
-  title: "Research Portal for the Schulich School of Law"
-  content: "The Schulich School of Law at Dalhousie is one of Canada's leading legal research institutions."
+  title: "Schulich School of Law <br/> Research Portal"
+  content: "Explore the goals and themes that motivate our research at the Schulich School of Law, and learn more about our researchers and their leading work."
   image: /images/banner.png
   button:
     enable: true
-    label: "Learn about our researchers"
+    label: "Learn about our Researchers"
     link: "/authors"
 
 
