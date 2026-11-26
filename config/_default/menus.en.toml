@@ -7,7 +7,7 @@ url = "/authors"
 weight = 4
 
 [[main]]
-name = "Our Research Commitment"
+name = "Research Commitment"
 url = "/focus"
 weight = 1
 
